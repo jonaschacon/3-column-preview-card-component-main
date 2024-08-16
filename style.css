@@ -32,7 +32,6 @@ body {
     min-height: 100vh;
     background-color: var(--very-light-cyan);
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -42,6 +41,7 @@ main {
     border-radius: 10px;
     overflow: hidden;
 }
+
 
 main div {
     display: flex;
@@ -65,19 +65,23 @@ div.card3 {
     color: var(--very-dark-cyan);
 }
 
+img {
+    width: 60px;
+}
+
 h1 {
     text-transform: uppercase;
-    font-family: var(--big-shoulders-display);
+    font-family: var(--big-shoulders-display), sans-serif;
     color: var(--very-light-cyan);
 }
 
 main p {
-    font-family: var(--lexend-deca);
+    font-family: var(--lexend-deca), sans-serif;
     color: var(--transparent-white);
 }
 
 button {
-    font-family: var(--lexend-deca);
+    font-family: var(--lexend-deca), sans-serif;
     width: 180px;
     border: 2px solid white;
     border-radius: 40px;
@@ -94,9 +98,14 @@ button:hover {
     color: white;
 }
 
-img {
-    width: 60px;
+
+
+@media screen and (min-width: 950px) {
+    main {
+        display: flex;
+        max-width: 900px;
+    }
 }
 
-.attribution { font-size: 1rem; text-align: center; }
+.attribution { font-size: 1rem; text-align: center; font-family: var(--lexend-deca), sans-serif;}
 .attribution a { color: hsl(228, 45%, 44%); }
